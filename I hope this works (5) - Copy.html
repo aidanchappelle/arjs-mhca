@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>AR.js Location-Based App</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script type='text/javascript' src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">
+    <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+    </script>
+    <style>
+        #helloWorld {
+            position: absolute;
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body style="margin: 0; overflow: hidden;">
+<div id="helloWorld">MHCA AR Project, powered by ar.js</div>
+<a-scene vr-mode-ui="enabled: false;" loading-screen="enabled: false;" arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded gesture-detector>
+        <!-- GPS-based camera -->
+        <a-camera gps-camera rotation-reader></a-camera>
+        <!-- Location-based target -->
+        <a-entity gps-entity-place="latitude: 46.394059; longitude: -63.789099">
+           <a-cylinder color="green" height="2" radius="1"></a-cylinder>
+        </a-entity>
+        <!-- GPS-based camera -->
+        <a-camera gps-camera rotation-reader></a-camera>
+        <a-marker id="animated-marker" type="pattern" preset="custom" url="assets/marker.patt">
+        <a-cylinder color="red" height="2" radius="1" position="0 0.5 0"></a-cylinder>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
