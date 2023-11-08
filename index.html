@@ -1,3 +1,4 @@
+<!-- Markers are after line 20. -->
 <!doctype html>
 <html>
     <head>
@@ -16,25 +17,24 @@
             embedded
             gesture-detector
         >
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
-                <a-video
-                    src="assets/asset.gif"
-                    scale="1 1 1"
-                    class="clickable"
-                    rotation="-90 0 0"
-                    gesture-handler
-                ></a-video>
+<!-- MARKERS -->
+<!-- MARKER 1 -->
+            <a-marker type="pattern" preset="custom" url="assets/marker.patt">
+                <a-image src="assets/asset.gif" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
             </a-marker>
-
+<!-- MARKER 2 -->
+            <a-marker type="pattern" preset="custom" url="assets/marker.patt">
+                <a-image src="assets/asset.gif" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+            </a-marker>
+<!-- MARKER 3 -->
+            <a-marker type="pattern" preset="custom" url="assets/marker.patt">
+                <a-image src="assets/asset.gif" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+            </a-marker>
+<!-- MARKER 4 -->
+            <a-marker type="pattern" preset="custom" url="assets/marker.patt">
+                <a-image src="assets/asset.gif" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+            </a-marker>
+<!-- FOOTER, DO NOT TOUCH -->
             <a-entity camera></a-entity>
         </a-scene>
     </body>
