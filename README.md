@@ -1,8 +1,8 @@
 # arjs-mhca
-# Snippets in case you need them. Line 20 of index.html is where the fun begins.
+Snippets in case you need them. Line 20 of index.html is where the fun begins.
 
 # Markers:
-<!--Image-based marker-->
+Image-based marker
 <a-marker type="pattern" preset="custom" url="assets/marker.patt">
     <!--OVERLAY-->
 </a-marker>
