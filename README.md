@@ -1,7 +1,7 @@
 # Culture Summerside AR Project (powered by AR.js)
 This is currently indev, the final product will not be on GitHub. Snippets below in case you need them. Line 20 of index.html is where the fun begins.
 
-## Markers
+### Markers
 Image-based marker
 ```
 <a-marker type="pattern" preset="custom" *url="assets/marker.patt">
@@ -14,7 +14,7 @@ Location-based marker
     OVERLAY
 </a-entity>
 ```
-# Overlays
+### Overlays
 Image overlay
 ```
 <a-image src="assets/...YOUR IMAGE FILE..." scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
