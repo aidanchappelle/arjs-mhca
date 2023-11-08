@@ -1,5 +1,5 @@
 # arjs-mhca
-Snippets in case you need them. Line 20 of index.html is where the fun begins.
+* Snippets in case you need them. Line 20 of index.html is where the fun begins.
 
 # Markers:
 Image-based marker
