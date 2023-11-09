@@ -39,3 +39,7 @@ Shape overlay
 ```
 <a-torus color="brown" height="2" radius="1"></a-torus>
 ```
+GLTF overlay
+```
+<a-entity gltf-model="GLTF or GLB"></a-entity>
+```
