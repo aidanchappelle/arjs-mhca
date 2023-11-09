@@ -15,6 +15,10 @@ Location-based marker
 </a-entity>
 ```
 ### Overlays
+Text overlay
+```
+<a-text value="hello world"></a-text>
+```
 Image overlay
 ```
 <a-image src="assets/...YOUR IMAGE FILE..." scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
