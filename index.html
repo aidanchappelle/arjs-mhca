@@ -7,7 +7,6 @@
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
     </head>
-
     <body style="margin: 0; overflow: hidden;">
         <a-scene
             vr-mode-ui="enabled: false;"
@@ -18,7 +17,6 @@
             gesture-detector
         >
 <!-- This is where the fun begins. -->
-
 <!-- MARKER TEST -->
             <a-marker type="pattern" preset="custom" url="assets/marker.patt">
                 <a-image src="assets/asset.gif" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
@@ -33,7 +31,7 @@
             </a-entity>
 <!-- MARKER 3 / MHCA - Number 3 -->
             <a-marker type="pattern" preset="custom" url="assets/pattern-marker3.patt">
-                <a-video src="assets/Three.mp4" scale="1 1 1" class="clickable" autoplay="true" loop="true" rotation="0 0 0" gesture-handler></a-video>
+                <a-video src="assets/Three.mp4" scale="1 1 1" class="clickable" autoplay="true" loop="true" rotation="-90 0 0" gesture-handler></a-video>
             </a-marker>
 <!-- MARKER 4 / MHCA - Number 4 -->
             <a-marker type="pattern" preset="custom" url="assets/pattern-marker4.patt">
