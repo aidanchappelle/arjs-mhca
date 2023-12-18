@@ -17,7 +17,7 @@ Location-based marker
 ### Overlays
 Text overlay
 ```
-<a-text value="hello world"></a-text>
+<a-text value="hello world" color="#0099FF" scale="1 1 1" class="clickable" position="0 0 0"></a-text>
 ```
 Image overlay
 ```
