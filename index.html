@@ -20,10 +20,21 @@
         </style>
     </head>
     <body style="margin: 0; overflow: hidden;">
-        <div id="helloWorld">MHCA AR Project, powered by ar.js (updated 8:58pm on 12/17/23)</div>
+        <div id="helloWorld">MHCA AR Project, powered by ar.js (updated 9:01pm on 12/17/23)</div>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
+
+    
+        
+          
+    
+
+        
+        Expand All
+    
+    @@ -38,10 +38,6 @@
+  
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
@@ -36,6 +47,14 @@
             </a-marker>
 <!-- MARKER 1 / MHCA - Number 1 -->
             <a-marker type="pattern" preset="custom" url="assets/pattern-marker1.patt">
+                <a-image src="assets/One.jpg" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+            </a-marker>
+<!-- MARKER 2 / MHCA - Door Cabinet -->
+            <a-entity gps-entity-place="latitude: 46.394157; longitude: -63.789018">
+                <a-image src="assets/Two.jpg" scale="1 1 1" class="clickable" rotation="-90 0 0" gesture-handler></a-image>
+            </a-entity>
+<!-- MARKER 3 / MHCA - Number 3 -->
+            <a-marker type="pattern" preset="custom" url="assets/pattern-marker3.patt">
                 <a-video src="assets/Three.mp4" scale="1 1 1" class="clickable" autoplay="true" loop="true" rotation="-90 0 0" gesture-handler></a-video>
             </a-marker>
 <!-- MARKER 4 / MHCA - Number 4 -->
@@ -57,6 +76,17 @@
 <!-- MARKER 8 / MHCA - Lamp -->
             <a-entity gps-entity-place="latitude: 46.394168; longitude: -63.788981">
                 <a-entity gltf-model="assets/Eight.glb" scale="1 1 1"></a-entity>
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
             </a-entity>
 <!-- MARKER 9 / MHCA - Number 9 -->
             <a-marker type="pattern" preset="custom" url="assets/marker9.patt">
