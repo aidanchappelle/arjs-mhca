@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>MHCA AR Project, powered by ar.js</title>
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
@@ -20,7 +20,7 @@
         </style>
     </head>
     <body style="margin: 0; overflow: hidden;">
-        <div id="helloWorld">MHCA AR Project, powered by ar.js (updated 12:24pm on 04/25/24)</div>
+        <div id="helloWorld">MHCA AR Project, powered by ar.js (updated 12:29pm on 04/25/24)</div>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -36,7 +36,7 @@
 <!-- This is where the fun begins. -->
 <!-- MARKER 1 / MHCA - Number 1 -->
             <a-marker type="pattern" preset="custom" url="assets/pattern-marker1.patt">
-                <a-video src="assets/kitten.mp4" autoplay="false" class="clickable"></a-video>
+                <a-video src="assets/kitten.mp4" autoplay="false" rotation="-90 0 0"></a-video>
             </a-marker>
 <!-- MARKER 2 / MHCA - Door Cabinet -->
             <a-entity gps-entity-place="latitude: 46.394157; longitude: -63.789018">
