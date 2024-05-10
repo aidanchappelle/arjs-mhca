@@ -1,3 +1,5 @@
-window.addEventListener('click', function () { 
+window.addEventListener('click', function () {
+
+if(document.querySelector('#video').play(): true){document.querySelector('#video').pause();} else {}
    document.querySelector('#video').play();
  });
