@@ -1,8 +1,12 @@
+x = 0;
+
 window.addEventListener('click', function () { 
 
-if(document.querySelector('#video').paused;)
-    {document.querySelector('#video').play();}
+if(x === 0)
+    {document.querySelector('#video').play();
+    x = 1}
 
 else
-    {document.querySelector('#video').pause();}
+    {document.querySelector('#video').pause();
+    x = 0}
  });
