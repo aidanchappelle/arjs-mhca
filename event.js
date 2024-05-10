@@ -1,6 +1,6 @@
 window.addEventListener('click', function () { 
 
-if(document.querySelector('#video').paused();)
+if(document.querySelector('#video').paused;)
     {document.querySelector('#video').play();}
 
 else
