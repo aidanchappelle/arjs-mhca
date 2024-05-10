@@ -1,1 +1,2 @@
-anchorRef.addEventListener("markerFound", (e)=>{document.querySelector('#video').play()}
+window.addEventListener('click' function () {
+document.querySelector('#video').play(); });
