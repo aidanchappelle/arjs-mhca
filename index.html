@@ -20,19 +20,7 @@
         </style>
     </head>
     <body style="margin: 0; overflow: hidden;">
-        <div id="helloWorld">MHCA AR Project, powered by ar.js (updated 12:34pm on 05/10/24)</div>
-
-<button id="press" onclick="demo.innerHTML='hello'; press.innerHTML=''
-position: absolute;
-color: white;
-padding: 5px;
-font-size: 14px;
-top: 10px;
-left: 10px;
-right: 10px;
-background-color: rgba(0, 0, 0, 0.7);}">test</button>
-
-<p id="demo"></p>
+        <div id="helloWorld">MHCA AR Project, powered by ar.js (updated 12:48pm on 05/10/24)</div>
 
         <a-scene
             vr-mode-ui="false"
@@ -42,14 +30,15 @@ background-color: rgba(0, 0, 0, 0.7);}">test</button>
             embedded
             gesture-detector
             >
+<script src="event.js"></script>
 <!-- If an overlay has media playback, put it here as an asset so it doesn't play 24/7 -->
             <a-assets>
-                <video id="vid" src="assets/kitten.mp4"></video>
+                <video id="video" src="assets/kitten.mp4"></video>
             </a-assets>
 <!-- This is where the fun begins. -->
 <!-- MARKER 1 / MHCA - Number 1 -->
            <a-marker type="pattern" preset="custom" url="assets/pattern-marker1.patt">
-                <a-video src="#vid" rotation="-90 0 0"> loop="true" autoplay="true" </a-video>
+                <a-video src="#video" rotation="-90 0 0"> loop="true" autoplay="true" </a-video>
           </a-marker>
 
 <!-- MARKER 2 / MHCA - Door Cabinet -->
