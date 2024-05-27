@@ -1,5 +1,5 @@
 # Culture Summerside AR Project (powered by AR.js)
-This is currently indev, the final product will not be on GitHub. Snippets below in case you need them. Line 20 of index.html is where the fun begins.
+This is currently indev, the final product will not be on GitHub. Snippets below in case you need them. Line 38 of index.html is where the fun begins.
 
 ### Markers
 Image-based marker
