@@ -1,6 +1,12 @@
-window.addEventListener('markerFound', function () { 
+x = 0;
+
+window.addEventListener('click', function () { 
+
+if(x === 0)
     {document.querySelector('#video').play();
-    })
-window.addEventListener('markerLost', function () { 
+    x = 1}
+
+else
     {document.querySelector('#video').pause();
-    })
+    x = 0}
+ });
