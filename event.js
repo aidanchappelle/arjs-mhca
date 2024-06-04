@@ -1,6 +1,6 @@
-window.addEventListener('markerFound', function () { 
-    document.querySelector('video1').play();
+window.addEventListener('click', function () { 
+    document.querySelector('#video1').play();
     })
-window.addEventListener('markerLost', function () { 
-    document.querySelector('video1').pause();
+window.addEventListener('click', function () { 
+    document.querySelector('#video1').pause();
     })
