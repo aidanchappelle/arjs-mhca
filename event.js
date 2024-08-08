@@ -1,8 +1,11 @@
-window.addEventListener('markerFound', function () { 
+anchorRef.addEventListener('markerFound', (e)=>{ 
+    setTimeout(1000)
     console.log('markerFound')
-    {document.querySelector('#video').play();
-    }});
+    document.querySelector('#video').play();
+    });
 
-window.addEventListener('markerLost', function () { 
-    {document.querySelector('#video').pause();
- }});
+anchorRef.addEventListener('markerLost', (e)=>{ 
+    setTimeout(1000)
+    console.log('markerLost')
+    document.querySelector('#video').play();
+    });
