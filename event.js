@@ -1,6 +1,6 @@
-anchorRef.addEventListener('markerFound', (e)=>{ 
+window.addEventListener('markerFound', (e)=>{ 
     setTimeout(1000)
-    console.log('markerFound')
+    console.log('e')
     document.querySelector('#video').play();
     });
 
