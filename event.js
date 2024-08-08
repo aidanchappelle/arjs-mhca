@@ -1,5 +1,5 @@
 window.addEventListener('markerFound', function () { 
-    setTimeout(waitasec, 1000)
+    setTimeout(1000)
     if (markerFound == true) {
     {document.querySelector('#video').play();
     }}});
