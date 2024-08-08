@@ -1,6 +1,6 @@
 x = 0;
 
-window.addEventListener('click', function () { 
+window.addEventListener('markerFound', function () { 
 
 if(x === 0)
     {document.querySelector('#video').play();
