@@ -1,5 +1,5 @@
 window.addEventListener('markerFound', (e)=>{ 
-    console.log(e.target.id)
+    setTimeout(console.log("target-",e.target.id), 100)
     
     // Prevent asynchronous errors caused by play/pause.
     // https://goo.gl/LdLk22
@@ -18,7 +18,7 @@ window.addEventListener('markerFound', (e)=>{
 });
 
 window.addEventListener('markerLost', (e)=>{ 
-    document.querySelector(e.target.id)
+    setTimeout(console.log("target-",e.target.id), 100)
     
     // Prevent asynchronous errors caused by play/pause.
     // https://goo.gl/LdLk22
