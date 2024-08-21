@@ -7,5 +7,5 @@ window.addEventListener('markerFound', (e)=>{
 window.addEventListener('markerLost', (e)=>{ 
     setTimeout(1000)
     console.log(window.markerLost)
-    document.querySelector('#video').play();
+    document.querySelector('#video').pause();
     });
