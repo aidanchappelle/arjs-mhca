@@ -1,5 +1,5 @@
 window.addEventListener('markerFound', (e)=>{ 
-    setTimeout(console.log("target-"+e.target.id), 100)
+    console.log(e.target.id)
     
     // Prevent asynchronous errors caused by play/pause.
     // https://goo.gl/LdLk22
@@ -8,7 +8,7 @@ window.addEventListener('markerFound', (e)=>{
       var playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise.then(_ => {
-            document.querySelector('#video').play()
+            document.querySelector('#target-'+e.target.id).play()
         })
         .catch(error => {
           // Auto-play was prevented
@@ -18,7 +18,7 @@ window.addEventListener('markerFound', (e)=>{
 });
 
 window.addEventListener('markerLost', (e)=>{ 
-    setTimeout(console.log("target-"+e.target.id), 100)
+    console.log(e.target.id)
     
     // Prevent asynchronous errors caused by play/pause.
     // https://goo.gl/LdLk22
@@ -27,7 +27,7 @@ window.addEventListener('markerLost', (e)=>{
       var playPromise = video.pause();
       if (playPromise !== undefined) {
         playPromise.then(_ => {
-          document.querySelector('#video').pause()
+            document.querySelector('#target-'+e.target.id).pause()
         })
         .catch(error => {
           // Auto-play was prevented
