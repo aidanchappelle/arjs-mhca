@@ -1,6 +1,6 @@
 window.addEventListener('markerFound', (e)=>{ 
-    console.log(e.target.id)
-    
+    console.log("Found",e.target.id)
+
     // Prevent asynchronous errors caused by play/pause.
     // https://goo.gl/LdLk22
     
@@ -9,6 +9,7 @@ window.addEventListener('markerFound', (e)=>{
       if (playPromise !== undefined) {
         playPromise.then(_ => {
             document.querySelector('#target-'+e.target.id).play()
+            console.log("Played",'#target-'+e.target.id)
         })
         .catch(error => {
           // Auto-play was prevented
@@ -18,7 +19,7 @@ window.addEventListener('markerFound', (e)=>{
 });
 
 window.addEventListener('markerLost', (e)=>{ 
-    console.log(e.target.id)
+    console.log("Lost",e.target.id)
     
     // Prevent asynchronous errors caused by play/pause.
     // https://goo.gl/LdLk22
@@ -28,6 +29,7 @@ window.addEventListener('markerLost', (e)=>{
       if (playPromise !== undefined) {
         playPromise.then(_ => {
             document.querySelector('#target-'+e.target.id).pause()
+            console.log("Paused",'#target-'+e.target.id)
         })
         .catch(error => {
           // Auto-play was prevented
@@ -35,5 +37,3 @@ window.addEventListener('markerLost', (e)=>{
         });
       }
 });
-detail.parameters.patternUrl
-currentTarget.document.lastModified
