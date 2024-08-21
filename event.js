@@ -1,6 +1,5 @@
 window.addEventListener('markerFound', (e)=>{ 
-    setTimeout(1000)
-    console.log()
+    console.log(e)
     document.querySelector('#video').play();
     
     // Prevent asynchronous errors caused by play/pause.
@@ -21,7 +20,6 @@ window.addEventListener('markerFound', (e)=>{
 });
 
 window.addEventListener('markerLost', (e)=>{ 
-    setTimeout(1000)
     console.log(e)
     
     // Prevent asynchronous errors caused by play/pause.
