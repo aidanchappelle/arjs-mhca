@@ -1,6 +1,5 @@
 window.addEventListener('markerFound', (e)=>{ 
     console.log(e)
-    document.querySelector('#video').play();
     
     // Prevent asynchronous errors caused by play/pause.
     // https://goo.gl/LdLk22
@@ -9,8 +8,7 @@ window.addEventListener('markerFound', (e)=>{
       var playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise.then(_ => {
-          // Automatic playback started!
-          // Show playing UI.
+            document.querySelector('#video').play()
         })
         .catch(error => {
           // Auto-play was prevented
@@ -26,11 +24,10 @@ window.addEventListener('markerLost', (e)=>{
     // https://goo.gl/LdLk22
     
     // Show loading animation.
-      var playPromise = video.play();
+      var playPromise = video.pause();
       if (playPromise !== undefined) {
         playPromise.then(_ => {
-          // Automatic playback started!
-          // Show playing UI.
+          document.querySelector('#video').pause()
         })
         .catch(error => {
           // Auto-play was prevented
