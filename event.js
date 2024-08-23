@@ -5,7 +5,7 @@ window.addEventListener('markerFound', (e)=>{
     // https://goo.gl/LdLk22
     
     // Show loading animation.
-      var playPromise = video.play();
+      var playPromise = document.querySelector('#target-'+e.target.id).play();
       if (playPromise !== undefined) {
         playPromise.then(_ => {
             document.querySelector('#target-'+e.target.id).play()
@@ -25,7 +25,7 @@ window.addEventListener('markerLost', (e)=>{
     // https://goo.gl/LdLk22
     
     // Show loading animation.
-      var playPromise = video.pause();
+      var playPromise = document.querySelector('#target-'+e.target.id).pause();
       if (playPromise !== undefined) {
         playPromise.then(_ => {
             document.querySelector('#target-'+e.target.id).pause()
