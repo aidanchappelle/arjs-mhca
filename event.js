@@ -6,7 +6,7 @@ window.addEventListener('markerFound', (e)=>{
     
     // Show loading animation.
       var playPromise = document.querySelector('#target-'+e.target.id).play();
-      if (playPromise !== undefined) {
+      if (playPromise !== undefined || playPromise !== null) {
         playPromise.then(_ => {
             document.querySelector('#target-'+e.target.id).play()
             console.log("Played",'#target-'+e.target.id)
@@ -26,7 +26,7 @@ window.addEventListener('markerLost', (e)=>{
     
     // Show loading animation.
       var playPromise = document.querySelector('#target-'+e.target.id).pause();
-      if (playPromise !== undefined) {
+      if (playPromise !== undefined || playPromise !== null) {
         playPromise.then(_ => {
             document.querySelector('#target-'+e.target.id).pause()
             console.log("Paused",'#target-'+e.target.id)
