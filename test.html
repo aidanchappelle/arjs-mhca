@@ -27,11 +27,11 @@ I am using AI as an educational resource, hand-in-hand with material studies and
   button.addEventListener("click", () => {
     if (video.style.display === "none") {
       video.style.display = "block";
-      video.pause();
+      video.play();
       button.textContent = "Hide Video";
     } else {
       video.style.display = "none";
-      video.play();
+      video.pause();
       button.textContent = "Show Video";
     }
   });
