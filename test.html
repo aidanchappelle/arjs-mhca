@@ -13,17 +13,14 @@ I am using AI as an educational resource, hand-in-hand with material studies and
 </style>
 </head>
 <body>
-
+  
 <button id="toggleButton">Show Video</button>
-
-<video id="myVideo" width="400" controls>
+<video id="myVideo" width="auto" controls>
   <source src="assets/using the exhibit.mp4" type="video/mp4">
 </video>
-
 <script>
   const video = document.getElementById("myVideo");
   const button = document.getElementById("toggleButton");
-
   button.addEventListener("click", () => {
     if (video.style.display === "none") {
       video.style.display = "block";
