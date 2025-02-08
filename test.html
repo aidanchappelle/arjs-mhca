@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-// Gemini helped me write this. AI is not perfect, but its flaws are a foundation that helps me understand how to write and optimise code. I am using AI as an educational resource, hand-in-hand with material studies and peer review. I'm not giving it any critical information.
+<!--
+Gemini helped me write this. AI is not perfect, but its flaws are a foundation that helps me understand how to write and optimise code.
+I am using AI as an educational resource, hand-in-hand with material studies and peer review. I'm not giving it any critical information.
+-->
 <html>
 <head>
 <title>Toggle Video Visibility</title>
@@ -24,9 +27,11 @@
   button.addEventListener("click", () => {
     if (video.style.display === "none") {
       video.style.display = "block";
+      video.pause();
       button.textContent = "Hide Video";
     } else {
       video.style.display = "none";
+      video.play();
       button.textContent = "Show Video";
     }
   });
