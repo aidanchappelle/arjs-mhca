@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+// Gemini helped me write this. AI is not perfect, but its flaws are a foundation that helps me understand how to write and optimise code. I am using AI as an educational resource, hand-in-hand with material studies and peer review. I'm not giving it any critical information.
+<html>
+<head>
+<title>Toggle Video Visibility</title>
+<style>
+  #myVideo {
+    display: none; /* Initially hidden */
+  }
+</style>
+</head>
+<body>
+
+<button id="toggleButton">Show Video</button>
+
+<video id="myVideo" width="400" controls>
+  <source src="assets/using the exhibit.mp4" type="video/mp4">
+</video>
+
+<script>
+  const video = document.getElementById("myVideo");
+  const button = document.getElementById("toggleButton");
+
+  button.addEventListener("click", () => {
+    if (video.style.display === "none") {
+      video.style.display = "block";
+      button.textContent = "Hide Video";
+    } else {
+      video.style.display = "none";
+      button.textContent = "Show Video";
+    }
+  });
+</script>
+
+</body>
+</html>
