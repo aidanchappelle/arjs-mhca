@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Markers are after line 32. -->
+<!-- Markers are after line 92. -->
 <meta http-equiv='cache-control' content='no-cache'>
 <meta http-equiv='expires' content='0'>
 <meta http-equiv='pragma' content='no-cache'>
@@ -52,9 +52,21 @@
         	id="scene"
         	embedded
         	gesture-detector
-        	> <!-- No clue why VR button keeps showing up -->
+		>
 <!-- If target has media playback, this script will fetch its assigned ID and control playback accordingly -->
-<script src="event.js"></script>
+<script>
+window.addEventListener('markerFound', (e)=>{ 
+    console.log("Found",e.target.id)
+    document.querySelector('#target-'+e.target.id).play()
+    console.log("Played",'#target-'+e.target.id)
+});
+
+window.addEventListener('markerLost', (e)=>{ 
+    console.log("Lost",e.target.id)
+    document.querySelector('#target-'+e.target.id).pause()
+    console.log("Paused",'#target-'+e.target.id)
+});
+</script>
 <!-- If target has media playback, source here as an asset so it doesn't play 24/7 -->
         	<a-assets>
         	<!-- MUNICIPAL GOVERNMENT -->
