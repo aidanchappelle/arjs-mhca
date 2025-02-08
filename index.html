@@ -11,6 +11,8 @@
     	<script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
     	<script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
     	<style>
+	#myVideo {
+		display: none;} /* Initially hidden */
     	#helloWorld {
         	position: absolute;
         	color: white;
@@ -23,7 +25,26 @@
     	</style>
 	</head>
 	<body style="margin: 0; overflow: hidden;">
-    	<div id="helloWorld">MHCA AR Project, powered by ar.js (updated 9:08pm on 02/08/2025)</div>
+    	<div id="helloWorld">MHCA AR Project, powered by ar.js (updated 11:06am on 02/08/2025)</div> <!-- I'd love to know how to update this text automatically per commit. -->
+	<button id="toggleButton">Show Video</button> <!-- Tutorial button -->
+	<video id="myVideo" width="720" controls> <!-- Tutorial width -->
+ 	<source src="assets/using the exhibit.mp4" type="video/mp4"> <!-- Tutorial asset location -->
+	</video>
+	<script> // JS code that controls playback and visibility of tutorial
+  	const video = document.getElementById("myVideo");
+  	const button = document.getElementById("toggleButton");
+  	button.addEventListener("click", () => {
+   	 if (video.style.display === "none") {
+    	  video.style.display = "block";
+    	  video.play(); // Resume tutorial when shown
+    	  button.textContent = "Hide Demo";
+    	} else {
+  	  video.style.display = "none";
+    	  video.pause(); // Don't play tutorial while hidden
+    	  button.textContent = "Show Demo";
+    	}
+  	});
+	</script>
 	<video controls width="250">
 			<source src="assets/using the exhibit.mp4">
     	<a-scene
@@ -33,7 +54,7 @@
         	id="scene"
         	embedded
         	gesture-detector
-        	>
+        	> <!-- No clue why VR button keeps showing up -->
 <!-- If target has media playback, this script will fetch its assigned ID and control playback accordingly -->
 <script src="event.js"></script>
 <!-- If target has media playback, source here as an asset so it doesn't play 24/7 -->
